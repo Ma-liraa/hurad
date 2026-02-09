@@ -1,5 +1,6 @@
 "use client";
 
+import { ProjectItem } from "@/components/ProjectItme";
 import { GithubIcon } from "@/icons/GithubIcon";
 import { LinkedinIcon } from "@/icons/LinkdinIcon";
 import { LinkIcon } from "@/icons/LinkIcon";
@@ -40,13 +41,16 @@ export default function Home() {
   ];
   const projects = [
     {
+      id: 1,
       name: "Hoorad Acc",
       description:
         "Creating technology to empower civilians to explore space on their own terms.",
       link: "github.com/hoorad/acc",
       color: "#10b981", // سبز زمردی برای حس مالی
+      gallery: ["/img2.jpg", "/img.png"],
     },
     {
+      id: 2,
       name: "Admin Panel",
       description:
         "Creating technology to empower civilians to explore space on their own terms.",
@@ -54,6 +58,7 @@ export default function Home() {
       color: "#3b82f6", // آبی متالیک
     },
     {
+      id: 3,
       name: "Crypto Tracker",
       description:
         "Creating technology to empower civilians to explore space on their own terms.",
@@ -138,10 +143,15 @@ export default function Home() {
                   }}
                 >
                   {/* آیکون با رنگ اصلی */}
-                  <span style={{ color: item.color }}>{item.icon}</span>
+                  <span
+                    style={{ color: item.color }}
+                    className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-110"
+                  >
+                    {item.icon}
+                  </span>
 
-                  {/* نام شبکه اجتماعی */}
-                  <span className="text-sm font-semibold text-zinc-400 transition-colors group-hover:text-zinc-100">
+                  {/* نام شبکه اجتماعی با رنگ‌بندی بهینه شده برای لایت و دارک */}
+                  <span className="text-sm font-semibold text-zinc-600 transition-colors group-hover:text-zinc-900 dark:text-zinc-400 dark:group-hover:text-zinc-100">
                     {item.name}
                   </span>
                 </a>
@@ -166,7 +176,7 @@ export default function Home() {
         </h2>
 
         {/* Skills Container - Responsive Grid/Flex */}
-        <div className="relative z-10 flex h-full w-full max-w-4xl flex-wrap items-center justify-center gap-3 px-4 md:gap-4 md:px-6">
+        <div className="relative flex h-full w-full max-w-4xl flex-wrap items-center justify-center gap-3 px-4 md:gap-4 md:px-6">
           {skills.map((skill) => (
             <div
               key={skill.name}
@@ -227,70 +237,14 @@ export default function Home() {
 
         <ul className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
-            <li
-              key={project.name}
-              className="group relative flex cursor-pointer flex-col items-start rounded-3xl p-6 transition-all duration-500 hover:bg-zinc-800/20"
-            >
-              {/* هاله نوری پشت کارت - با رنگ اختصاصی پروژه */}
-              <div
-                className="absolute -inset-px z-0 rounded-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                style={{
-                  background: `radial-gradient(400px circle at center, ${project.color}15, transparent 60%)`,
-                }}
-              ></div>
-
-              {/* بخش لوگو با استایل نئونی همرنگ */}
-              <div
-                className="relative z-10 flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-900 shadow-lg ring-1 transition-all duration-500"
-                style={{
-                  ringColor: `${project.color}33`, // شفافیت کم برای رینگ ثابت
-                  boxShadow: `inset 0 0 10px ${project.color}10`,
-                }}
-                // تغییر استایل در هاور به صورت دستی برای کنترل دقیق‌تر
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.borderColor = project.color)
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.borderColor = "transparent")
-                }
-              >
-                <div
-                  className="h-3 w-3 animate-pulse rounded-full"
-                  style={{
-                    backgroundColor: project.color,
-                    boxShadow: `0 0 15px ${project.color}`,
-                  }}
-                ></div>
-              </div>
-
-              <h3
-                className="z-10 mt-6 text-base font-bold text-zinc-100 transition-colors"
-                style={{ transitionColor: project.color }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.color = project.color)
-                }
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#f4f4f5")}
-              >
-                {project.name}
-              </h3>
-
-              <p className="relative z-10 mt-3 text-sm leading-6 text-zinc-400 group-hover:text-zinc-300">
-                {project.description}
-              </p>
-
-              {/* لینک با رنگ اختصاصی */}
-              <div
-                className="relative z-10 mt-6 flex items-center gap-x-2 text-sm font-semibold transition-colors"
-                style={{ color: "#a1a1aa" }} // رنگ خاکستری پیش‌فرض
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.color = project.color)
-                }
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#a1a1aa")}
-              >
-                <LinkIcon />
-                <span>{project.link}</span>
-              </div>
-            </li>
+            <ProjectItem
+              key={project.id}
+              name={project.name}
+              description={project.description}
+              color={project.color}
+              link={project.link}
+              gallery={project.gallery}
+            />
           ))}
         </ul>
       </section>
