@@ -7,6 +7,7 @@ import { forwardRef, useCallback, useImperativeHandle, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
+// این اینترفیس دقیقاً با چیزی که در SocialLinks ساختیم هماهنگ است
 export interface AtSignIconHandle {
   startAnimation: () => void;
   stopAnimation: () => void;
@@ -96,7 +97,7 @@ const AtSignIcon = forwardRef<AtSignIconHandle, AtSignIconProps>(
 
     return (
       <div
-        className={cn(className)}
+        className={cn("flex items-center justify-center", className)}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         {...props}
@@ -112,14 +113,18 @@ const AtSignIcon = forwardRef<AtSignIconHandle, AtSignIconProps>(
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
+          {/* دایره وسط @ */}
           <motion.circle
+            initial="normal" // ✅ این خط اضافه شد (مهم)
             animate={controls}
             cx="12"
             cy="12"
             r="4"
             variants={CIRCLE_VARIANTS}
           />
+          {/* دنباله دور @ */}
           <motion.path
+            initial="normal" // ✅ این خط اضافه شد (مهم)
             animate={controls}
             d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8"
             variants={PATH_VARIANTS}

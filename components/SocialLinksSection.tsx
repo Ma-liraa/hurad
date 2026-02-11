@@ -1,21 +1,21 @@
-import { GithubIcon } from "@/icons/GithubIcon";
-import { LinkedinIcon } from "@/icons/LinkdinIcon";
-import { TwitterIcon } from "@/icons/TwitterIcon";
 import SocialLinksProps from "@/type/SocialLinksProps";
 import SocialLinks from "./SocialLinks";
+import { LinkedinIcon } from "@/icons/LinkdinIcon";
+import { GithubIcon } from "@/icons/GithubIcon";
+import { TwitterIcon } from "@/icons/TwitterIcon";
 
 const socialLinks: SocialLinksProps[] = [
   {
     id: 1,
     name: "LinkedIn",
-    url: "#",
+    url: "https://www.linkedin.com/in/mohammad-ali-liravi?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     color: "#0077B5",
     icon: <LinkedinIcon />,
   },
   {
     id: 2,
     name: "GitHub",
-    url: "https://github.com/hurad-dev",
+    url: "https://github.com/Ma-liraa",
     color: "#ffffff",
     icon: <GithubIcon />,
   },
@@ -23,7 +23,7 @@ const socialLinks: SocialLinksProps[] = [
   {
     id: 3,
     name: "Twitter",
-    url: "#",
+    url: "https://x.com/ma__lira",
     color: "#1DA1F2",
     icon: <TwitterIcon />,
   },

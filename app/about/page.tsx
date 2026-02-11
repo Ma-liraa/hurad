@@ -1,9 +1,10 @@
 "use client";
+import EmailIcon from "@/components/EmailIcon";
 import SocialLinks from "@/components/SocialLinks";
-import { AtSignIcon } from "@/icons/AtSignIcon";
 import { GithubIcon } from "@/icons/GithubIcon";
 import { LinkedinIcon } from "@/icons/LinkdinIcon";
 import { TwitterIcon } from "@/icons/TwitterIcon";
+
 import SocialLinksProps from "@/type/SocialLinksProps";
 import Image from "next/image";
 
@@ -11,21 +12,21 @@ const socialLinks: SocialLinksProps[] = [
   {
     id: 1,
     name: "LinkedIn",
-    url: "#",
+    url: "https://www.linkedin.com/in/mohammad-ali-liravi?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     color: "#0077B5",
     icon: <LinkedinIcon />,
   },
   {
     id: 2,
     name: "GitHub",
-    url: "https://github.com/hurad-dev",
+    url: "https://github.com/Ma-liraa",
     color: "#ffffff",
     icon: <GithubIcon />,
   },
   {
     id: 3,
     name: "Twitter",
-    url: "#",
+    url: "https://x.com/ma__lira",
     color: "#1DA1F2",
     icon: <TwitterIcon />,
   },
@@ -42,6 +43,7 @@ export default function About() {
                 src="/img.png"
                 alt="hurad Liravi"
                 fill
+                sizes="1000px"
                 className="object-cover object-top transition-all duration-500"
               />
             </div>
@@ -52,55 +54,50 @@ export default function About() {
               <SocialLinks key={item.id} {...item} />
             ))}
 
-            <a
-              href="mailto:hurad@example.com"
-              className="group col-span-3 flex w-full items-center gap-x-3 rounded-xl border border-zinc-200 px-4 py-3 transition-all hover:bg-zinc-50 dark:border-zinc-700/50 dark:hover:bg-zinc-800/50"
-            >
-              <AtSignIcon />
-              <span className="text-sm font-medium text-zinc-600 group-hover:text-teal-500 dark:text-zinc-400">
-                hurad@example.com
-              </span>
-            </a>
+            <EmailIcon />
           </div>
         </div>
 
         <div className="lg:order-first lg:row-span-2">
-          <h1 className="text-4xl leading-tight font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m hurad Liravi. I live in Iran, where I design the future of the
-            web.
+          <h1 className="text-3xl leading-tight font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            I’m Hurad (Mohammad Ali Liravi) — a frontend engineer based in Iran,
+            designing and building the future of the web.
           </h1>
 
           <div className="mt-6 space-y-7 text-justify text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember. My journey
-              into software engineering started with a simple curiosity:
-              <span className="font-medium text-zinc-800 italic dark:text-zinc-200">
-                "How do these pixels actually work?"
+              I’ve been passionate about creating things for as long as I can
+              remember. My journey into software development started with a
+              simple question:
+              <span className="mr-2 ml-1 font-medium text-zinc-800 italic dark:text-zinc-200">
+                “How do these pixels actually work?”
               </span>
-              . That curiosity quickly turned into a passion for building
-              interfaces that not only look sleek but function flawlessly under
-              pressure.
+              That curiosity quickly grew into a deep interest in building
+              interfaces that are not only visually refined, but also reliable
+              and performant in real-world scenarios.
             </p>
 
             <p>
-              Today, I’m a frontend engineer specialized in the
-              <strong>React ecosystem</strong>. I’ve had the privilege of
-              architecting complex platforms, including comprehensive
-              <span className="font-medium text-teal-600 dark:text-teal-400">
-                financial accounting systems
+              Today, I specialize in the
+              <strong> React ecosystem</strong>, building modern web
+              applications with
+              <strong> Next.js</strong> and <strong> TypeScript</strong>. I’ve
+              worked on complex production platforms — including
+              <span className="mx-1 font-medium text-teal-600 dark:text-teal-400">
+                financial and accounting systems
               </span>
-              where data accuracy and performance are paramount. I don't just
-              write code; I build scalable solutions using
-              <strong>Next.js</strong> and <strong>TypeScript</strong> that
-              solve real-world business problems.
+              — where data accuracy, scalability, and performance are critical.
+              My focus goes beyond writing code; I design structured,
+              maintainable frontend solutions that support real business needs.
             </p>
 
             <p>
               My philosophy is simple:
-              <strong>User experience is everything.</strong> Whether I'm
-              optimizing a heavy dashboard or crafting a micro-interaction, I
-              strive for clean code, accessibility, and speed. I believe that
-              the best software feels invisible—it just works.
+              <strong> user experience comes first.</strong> From large
+              dashboards to small micro-interactions, I aim for clarity,
+              accessibility, speed, and clean architecture. I believe the best
+              software feels invisible — powerful under the hood, effortless on
+              the surface.
             </p>
           </div>
         </div>

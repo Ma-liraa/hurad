@@ -121,4 +121,49 @@
   body {
     @apply bg-background text-foreground;
   }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #a1a1aa transparent;
+  }
+
+  /* --- تنظیمات برای دارک مود در فایرفاکس --- */
+  .dark * {
+    scrollbar-color: #3f3f46 transparent;
+  }
+
+  /* --- تنظیمات برای کروم، اج و سافاری (Webkit) --- */
+
+  /* 1. عرض و ارتفاع اسکرول‌بار */
+  ::-webkit-scrollbar {
+    width: 6px; /* عرض برای اسکرول عمودی */
+    height: 6px; /* ارتفاع برای اسکرول افقی */
+  }
+
+  /* 2. مسیر یا زمینه اسکرول‌بار (Track) */
+  ::-webkit-scrollbar-track {
+    background: transparent; /* شفاف باشد تا رنگ پس‌زمینه بادی دیده شود */
+  }
+
+  /* 3. خودِ دستگیره اسکرول (Thumb) - حالت لایت */
+  ::-webkit-scrollbar-thumb {
+    background-color: #d4d4d8; /* zinc-300 */
+    border-radius: 9999px; /* کاملاً گرد */
+  }
+
+  /* 4. هاور روی دستگیره - حالت لایت */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a1a1aa; /* zinc-400 */
+  }
+
+  /* --- تنظیمات وب‌کیت برای دارک مود (.dark) --- */
+
+  /* تغییر رنگ دستگیره در دارک مود */
+  .dark ::-webkit-scrollbar-thumb {
+    background-color: #27272a; /* zinc-800 */
+  }
+
+  /* تغییر رنگ هاور در دارک مود */
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background-color: #3f3f46; /* zinc-700 */
+  }
 }

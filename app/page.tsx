@@ -21,15 +21,15 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl leading-tight font-bold tracking-tight text-zinc-800 sm:text-5xl lg:text-6xl dark:text-zinc-100">
-              Frontend developer, <br className="hidden md:block" />
-              <span className="text-teal-500">React specialist</span>, and UI
-              enthusiast.
+              Frontend Developer, <br className="hidden md:block" />
+              <span className="text-teal-500">React Specialist</span>, and UI
+              Enthusiast.
             </h1>
 
             <p className="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
               I’m
-              <span className="decoration ml-1 font-semibold text-zinc-800 underline decoration-teal-500/30 underline-offset-4 dark:text-zinc-100">
-                hurad
+              <span className=" ml-1 animate-pulse font-semibold text-teal-400">
+                Hurad
               </span>
               , a frontend engineer based in Iran. I specialize in building
               high-performance web applications with a focus on clean code and

@@ -14,11 +14,9 @@ interface ImageCarouselProps {
 
 export function ImageCarousel({ images }: ImageCarouselProps) {
   if (!images || images.length === 0) return null;
-  console.log(images);
-
   return (
-    <div className="group relative h-full w-full overflow-hidden rounded-2xl ">
-      <Carousel className="h-full w-full ">
+    <div className="group relative h-full w-full overflow-hidden rounded-2xl">
+      <Carousel className="h-full w-full">
         <CarouselContent className="ml-0">
           {images.map((src, index) => (
             <CarouselItem key={index} className="pl-0">
@@ -27,8 +25,7 @@ export function ImageCarousel({ images }: ImageCarouselProps) {
                   src={src}
                   alt={`Project slide ${index + 1}`}
                   fill
-                  className="pointer-events-none object-cover select-none"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="pointer-events-none size-full object-cover select-none"
                 />
 
                 <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
