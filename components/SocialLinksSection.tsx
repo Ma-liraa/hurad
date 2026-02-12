@@ -1,4 +1,4 @@
-import SocialLinksProps from "@/type/SocialLinksProps";
+import SocialLinksProps from "@/types/SocialLinksProps";
 import SocialLinks from "./SocialLinks";
 import { LinkedinIcon } from "@/icons/LinkdinIcon";
 import { GithubIcon } from "@/icons/GithubIcon";

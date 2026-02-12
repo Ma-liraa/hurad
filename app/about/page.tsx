@@ -5,7 +5,7 @@ import { GithubIcon } from "@/icons/GithubIcon";
 import { LinkedinIcon } from "@/icons/LinkdinIcon";
 import { TwitterIcon } from "@/icons/TwitterIcon";
 
-import SocialLinksProps from "@/type/SocialLinksProps";
+import SocialLinksProps from "@/types/SocialLinksProps";
 import Image from "next/image";
 
 const socialLinks: SocialLinksProps[] = [

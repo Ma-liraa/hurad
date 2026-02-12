@@ -1,6 +1,6 @@
 "use client";
 
-import SocialLinksProps from "@/type/SocialLinksProps";
+import SocialLinksProps from "@/types/SocialLinksProps";
 import React, { useRef } from "react";
 
 interface AnimatedIconHandle {

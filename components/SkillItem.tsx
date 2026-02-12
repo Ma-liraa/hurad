@@ -1,4 +1,4 @@
-import SkillsProps from "@/type/SkillsProps";
+import SkillsProps from "@/types/SkillsProps";
 
 function SkillItem({ color, name }: SkillsProps) {
   return (

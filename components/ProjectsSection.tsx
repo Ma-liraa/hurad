@@ -1,4 +1,4 @@
-import ProjectProps from "@/type/ProjectProps";
+import ProjectProps from "@/types/ProjectProps";
 import { ProjectItem } from "./ProjectItem";
 const projects: (ProjectProps & { id: number })[] = [
   {

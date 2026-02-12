@@ -27,7 +27,7 @@ function EmailIcon() {
   };
   return (
     <a
-      href="mailto:hurad@example.com"
+      href="mailto:maliravi.dev@gmail.com"
       className="group relative col-span-3 flex w-full items-center justify-center gap-x-3 rounded-xl border px-4 py-3 transition-all duration-300 ease-in-out hover:scale-105"
       style={{
         backgroundColor: "rgba(20, 184, 166, 0.05)",
@@ -57,7 +57,7 @@ function EmailIcon() {
       </span>
 
       <span className="text-sm font-semibold text-zinc-600 transition-colors group-hover:text-zinc-900 dark:text-zinc-400 dark:group-hover:text-zinc-100">
-        hurad@example.com
+        maliravi.dev@gmail.com
       </span>
 
       <div

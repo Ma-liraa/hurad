@@ -1,4 +1,4 @@
-import SkillsProps from "@/type/SkillsProps";
+import SkillsProps from "@/types/SkillsProps";
 import SkillItem from "./SkillItem";
 
 const skills: SkillsProps[] = [

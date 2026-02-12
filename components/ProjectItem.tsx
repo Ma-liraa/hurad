@@ -10,7 +10,7 @@ import {
 import { ExternalLink } from "lucide-react";
 import { ImageCarousel } from "./ImageCarousel";
 import { LinkIcon } from "@/icons/LinkIcon";
-import ProjectProps from "@/type/ProjectProps";
+import ProjectProps from "@/types/ProjectProps";
 import SkillItem from "./SkillItem";
 
 export function ProjectItem({ project }: { project: ProjectProps }) {
