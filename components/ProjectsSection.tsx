@@ -221,15 +221,68 @@ const projects: (ProjectProps & { id: number })[] = [
       "/HesabamImg/Hesabam-11.png",
     ],
   },
-  // {
-  //   id: 3,
-  //   name: "Crypto Tracker",
-  //   shortDescription:
-  //     "Creating technology to empower civilians to explore space on their own terms.",
-  //   longDescription: <div></div>,
-  //   link: "github.com/hurad/crypto",
-  //   color: "#f59e0b",
-  // },
+  {
+    id: 3,
+    name: "Digitize",
+    shortDescription:
+      "Digitize is a responsive e-commerce user interface built with TailwindCSS, featuring product listing, product detail, and shopping cart pages with a clean, modular, and modern design approach.",
+    longDescription: (
+      <div className="space-y-5 text-justify leading-relaxed text-zinc-400">
+        <p>
+          🛒 <strong>Digitize</strong> is a modern and fully responsive
+          e-commerce UI project designed with a strong focus on user experience
+          and clean interface design.
+        </p>
+
+        <p>
+          📱 The application simulates a real-world online store experience and
+          includes three core sections:
+        </p>
+
+        <ul className="list-disc space-y-2 pl-5">
+          <li>🧾 Product Listing Page with filtering and categorization</li>
+          <li>🔍 Product Detail Page with variant selection</li>
+          <li>
+            🛍️ Shopping Cart Page with quantity management and pricing overview
+          </li>
+        </ul>
+
+        <p>
+          🎨 The UI is built using <strong>TailwindCSS</strong> and structured
+          with a component-based approach to ensure scalability and
+          maintainability.
+        </p>
+
+        <p>
+          🚀 The main goal of this project was to recreate a realistic shopping
+          interface while focusing on:
+        </p>
+
+        <ul className="list-disc space-y-2 pl-5">
+          <li>✨ Smooth user experience</li>
+          <li>📐 Responsive layout across devices</li>
+          <li>🧩 Modular frontend structure</li>
+          <li>⚡ Clean and modern UI implementation</li>
+        </ul>
+      </div>
+    ),
+    skills: [
+      { name: "HTML5", color: "#E34F26", category: "Core" },
+      { name: "CSS3", color: "#1572B6", category: "Core" },
+      { name: "Tailwind CSS", color: "#38B2AC", category: "Design" },
+      { name: "Git", color: "#F05032", category: "Tools" },
+      { name: "GitHub", color: "#FFFFFF", category: "Tools" },
+    ],
+    link: "https://github.com/Ma-liraa/DigitizeApp",
+    color: "#f59e0b",
+    gallery: [
+      "/Digitize/Digitize-1.png",
+      "/Digitize/Digitize-2.png",
+      "/Digitize/Digitize-3.png",
+      "/Digitize/Digitize-4.png",
+      "/Digitize/Digitize-5.png",
+    ],
+  },
 ];
 function ProjectsSection() {
   return (
