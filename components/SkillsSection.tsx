@@ -15,7 +15,8 @@ const skills: SkillsProps[] = [
   { name: "React Query", color: "#FF4154", category: "Library" },
   { name: "React Router", color: "#CA4245", category: "Library" },
   { name: "React Hook Form", color: "#EC5990", category: "Library" },
-
+   { name: "Alpine js", color: "#8BC0D0", category: "Library" },
+   
   // --- Styling ---
   { name: "Tailwind CSS", color: "#38B2AC", category: "Design" },
   { name: "Bootstrap", color: "#7952B3", category: "Design" },

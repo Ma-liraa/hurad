@@ -283,6 +283,180 @@ const projects: (ProjectProps & { id: number })[] = [
       "/Digitize/Digitize-5.png",
     ],
   },
+  {
+    id: 4,
+    name: "Digitize",
+    shortDescription:
+      "Digitize is a responsive e-commerce user interface built with TailwindCSS, featuring product listing, product detail, and shopping cart pages with a clean, modular, and modern design approach.",
+    longDescription: (
+      <div className="space-y-5 text-justify leading-relaxed text-zinc-400">
+        <p>
+          🛒 <strong>Digitize</strong> is a modern and fully responsive
+          e-commerce UI project designed with a strong focus on user experience
+          and clean interface design.
+        </p>
+
+        <p>
+          📱 The application simulates a real-world online store experience and
+          includes three core sections:
+        </p>
+
+        <ul className="list-disc space-y-2 pl-5">
+          <li>🧾 Product Listing Page with filtering and categorization</li>
+          <li>🔍 Product Detail Page with variant selection</li>
+          <li>
+            🛍️ Shopping Cart Page with quantity management and pricing overview
+          </li>
+        </ul>
+
+        <p>
+          🎨 The UI is built using <strong>TailwindCSS</strong> and structured
+          with a component-based approach to ensure scalability and
+          maintainability.
+        </p>
+
+        <p>
+          🚀 The main goal of this project was to recreate a realistic shopping
+          interface while focusing on:
+        </p>
+
+        <ul className="list-disc space-y-2 pl-5">
+          <li>✨ Smooth user experience</li>
+          <li>📐 Responsive layout across devices</li>
+          <li>🧩 Modular frontend structure</li>
+          <li>⚡ Clean and modern UI implementation</li>
+        </ul>
+      </div>
+    ),
+    skills: [
+      { name: "HTML5", color: "#E34F26", category: "Core" },
+      { name: "CSS3", color: "#1572B6", category: "Core" },
+      { name: "Tailwind CSS", color: "#38B2AC", category: "Design" },
+      { name: "Git", color: "#F05032", category: "Tools" },
+      { name: "GitHub", color: "#FFFFFF", category: "Tools" },
+    ],
+    link: "https://github.com/Ma-liraa/DigitizeApp",
+    color: "#FF4154",
+    gallery: [
+      "/Shopino/Shopino-1.png",
+      "/Shopino/Shopino-2.png",
+      "/Shopino/Shopino-3.png",
+      "/Shopino/Shopino-4.png",
+      "/Shopino/Shopino-5.png",
+      "/Shopino/Shopino-6.png",
+      "/Shopino/Shopino-7.png",
+    ],
+  },
+  {
+    id: 5,
+    name: "Shopino (E-Commerce UI)",
+    shortDescription:
+      "A lightweight, high-performance e-commerce UI kit built with HTML5, Tailwind CSS v4, and Alpine.js. Features a fully responsive design including a Product Listing page and a detailed Product Page, with dark mode support and smooth interactive elements.",
+    longDescription: (
+      <div
+        className="space-y-6 leading-relaxed text-gray-800 dark:text-gray-200"
+        dir="ltr"
+      >
+        {/* Intro */}
+        <div>
+          <h3 className="mb-2 text-xl font-bold text-teal-600 dark:text-teal-400">
+            Comprehensive Overview:
+          </h3>
+          <p>
+            <strong>Shopino</strong> is a modern, pixel-perfect e-commerce user
+            interface designed to showcase the power of{" "}
+            <strong>Tailwind CSS v4</strong> combined with the lightweight
+            reactivity of <strong>Alpine.js</strong>. The project focuses on
+            delivering a fast, native-like shopping experience without the
+            overhead of heavy JavaScript frameworks.
+          </p>
+        </div>
+
+        {/* Key Features List */}
+        <ul className="list-none space-y-4 pl-0">
+          <li>
+            <strong className="mb-1 block text-lg">
+              🎨 Bleeding-Edge Styling (Tailwind v4):
+            </strong>
+            <p className="opacity-90">
+              Built using the latest <strong>Tailwind CSS v4</strong> engine,
+              utilizing modern CSS features for ultra-fast load times and a
+              streamlined development workflow. The design is clean, minimalist,
+              and focused on product visibility.
+            </p>
+          </li>
+
+          <li>
+            <strong className="mb-1 block text-lg">
+              ⚡ Lightweight Interactivity (Alpine.js):
+            </strong>
+            <p className="opacity-90">
+              Instead of a complex virtual DOM, <strong>Alpine.js</strong> is
+              used to handle UI state and interactions efficiently.
+              <br />• <strong>Dynamic Components:</strong> Smooth mobile menu
+              toggles, modal popups for filters, and interactive image galleries
+              are all powered by Alpine's reactive directives.
+            </p>
+          </li>
+
+          <li>
+            <strong className="mb-1 block text-lg">
+              📱 Fully Responsive & Mobile-First:
+            </strong>
+            <p className="opacity-90">
+              The application is meticulously optimized for all screen sizes:
+              <br />• <strong>Product Listing:</strong> Adapts from a
+              single-column layout on mobile to a spacious grid on desktop.
+              <br />• <strong>Mobile UX:</strong> Features an off-canvas
+              hamburger menu and touch-friendly navigation elements.
+            </p>
+          </li>
+
+          <li>
+            <strong className="mb-1 block text-lg">
+              🛍️ Core E-Commerce Pages:
+            </strong>
+            <p className="opacity-90">
+              The project includes two professionally designed pages:
+              <br />• <strong>Product Listing Page (PLP):</strong> showcasing
+              items with filters and sorting options.
+              <br />• <strong>Product Detail Page (PDP):</strong> featuring a
+              dynamic image gallery, size/color selectors, and detailed product
+              information.
+            </p>
+          </li>
+
+          <li>
+            <strong className="mb-1 block text-lg">🌗 Dark Mode Ready:</strong>
+            <p className="opacity-90">
+              Includes a carefully crafted Dark Mode that automatically adjusts
+              contrast and colors, providing a comfortable browsing experience
+              in low-light environments.
+            </p>
+          </li>
+        </ul>
+      </div>
+    ),
+    skills: [
+      { name: "HTML5", color: "#E34F26", category: "Core" },
+      { name: "CSS3", color: "#1572B6", category: "Core" },
+      { name: "Tailwind CSS", color: "#38B2AC", category: "Design" },
+      { name: "Alpine js", color: "#8BC0D0", category: "Library" },
+      { name: "Git", color: "#F05032", category: "Tools" },
+      { name: "GitHub", color: "#FFFFFF", category: "Tools" },
+    ],
+    link: "https://github.com/Ma-liraa/DigitizeApp",
+    color: "#85EA2D",
+    gallery: [
+      "/Shopino/Shopino-1.png",
+      "/Shopino/Shopino-2.png",
+      "/Shopino/Shopino-3.png",
+      "/Shopino/Shopino-4.png",
+      "/Shopino/Shopino-5.png",
+      "/Shopino/Shopino-6.png",
+      "/Shopino/Shopino-7.png",
+    ],
+  },
 ];
 function ProjectsSection() {
   return (
