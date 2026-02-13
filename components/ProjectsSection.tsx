@@ -276,11 +276,11 @@ const projects: (ProjectProps & { id: number })[] = [
     link: "https://github.com/Ma-liraa/DigitizeApp",
     color: "#f59e0b",
     gallery: [
-      "/Digitize/Digitize-1.png",
-      "/Digitize/Digitize-2.png",
-      "/Digitize/Digitize-3.png",
-      "/Digitize/Digitize-4.png",
-      "/Digitize/Digitize-5.png",
+      "/Digitize/digitize-1.png",
+      "/Digitize/digitize-2.png",
+      "/Digitize/digitize-3.png",
+      "/Digitize/digitize-4.png",
+      "/Digitize/digitize-5.png",
     ],
   },
   {
