@@ -7,7 +7,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full pt-8">
+    <header className="w-full md:pt-4">
       <nav className="relative flex w-full items-center justify-center gap-x-4">
         {/* user img */}
         <div className="absolute left-1 sm:left-0">
