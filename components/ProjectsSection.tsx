@@ -223,6 +223,96 @@ const projects: (ProjectProps & { id: number })[] = [
   },
   {
     id: 3,
+    name: "Weblagino",
+    shortDescription:
+      "A high-performance, modern blogging platform and CMS built with Next.js 15 and React 19, focusing on cutting-edge UX and seamless content management.",
+    longDescription: (
+      <div className="space-y-4 text-left leading-7" dir="ltr">
+        <p>
+          🚀 <strong>Weblagino</strong> is a modern Content Management System
+          (CMS) and advanced blogging platform built using
+          <strong> Next.js 15, React 19, and TailwindCSS</strong>, designed to
+          professionally showcase frontend skills and complex architecture.
+        </p>
+        <p>
+          🎨 The project focuses on a clean Blue & Slate UI, strong typography,
+          and interactive components to deliver a fast, engaging, and visually
+          polished experience for both admins and visitors.
+        </p>
+        <h3 className="mt-4 font-semibold">✨ Key Features:</h3>
+        <ul className="space-y-2 pl-3">
+          <li>
+            📱 Fully responsive across mobile, tablet, and desktop devices
+          </li>
+          <li>
+            ⚡ Built with the latest Next.js 15 and React 19 for high
+            performance
+          </li>
+          <li>
+            📊 Professional Admin Dashboard for managing posts, users,
+            categories, and comments
+          </li>
+          <li>
+            🔄 Server-state management and intelligent caching via TanStack
+            Query v5
+          </li>
+          <li>
+            🔐 Secure Auth system with Access & Refresh Token management via
+            cookies
+          </li>
+          <li>
+            📝 Complex form handling with React Hook Form and Yup validation
+          </li>
+          <li>
+            ❤️ Interactive Like and Bookmark system with Optimistic Updates
+          </li>
+          <li>🧭 Seamless navigation across blog and management panels</li>
+          <li>🔍 SEO-ready meta tag configuration and optimized structure</li>
+          <li>🛠 Scalable component-based architecture</li>
+          <li>⚡ High-speed API interactions powered by Axios</li>
+          <li>
+            🔔 Real-time user feedback using react-hot-toast notifications
+          </li>
+          <li>🧱 Accessible UI components via Headless UI primitives</li>
+          <li>🧼 Utility class management with clsx and tailwind-merge</li>
+        </ul>
+        <p className="mt-4">
+          💼 This project serves as a technical showcase, highlighting
+          proficiency in modern frontend architecture, server-side data
+          synchronization, and UI craftsmanship.
+        </p>
+      </div>
+    ),
+    skills: [
+      { name: "HTML5", color: "#E34F26", category: "Core" },
+      { name: "CSS3", color: "#1572B6", category: "Core" },
+      { name: "JavaScript", color: "#F7DF1E", category: "Language" },
+      { name: "React", color: "#61DAFB", category: "Library" },
+      { name: "Next.js", color: "#FFFFFF", category: "Framework" },
+      { name: "React Query", color: "#FF4154", category: "Library" },
+      { name: "React Router", color: "#CA4245", category: "Library" },
+      { name: "React Hook Form", color: "#EC5990", category: "Library" },
+      { name: "Tailwind CSS", color: "#38B2AC", category: "Design" },
+      { name: "Git", color: "#F05032", category: "Tools" },
+      { name: "GitHub", color: "#FFFFFF", category: "Tools" },
+      { name: "Postman", color: "#FF6C37", category: "Tools" },
+    ],
+    link: "https://github.com/Ma-liraa/BlogApp",
+    color: "#FF4154",
+    gallery: [
+      "/Weblogino/weblogino-1.png",
+      "/Weblogino/weblogino-2.png",
+      "/Weblogino/weblogino-3.png",
+      "/Weblogino/weblogino-9.png",
+      "/Weblogino/weblogino-4.png",
+      "/Weblogino/weblogino-5.png",
+      "/Weblogino/weblogino-6.png",
+      "/Weblogino/weblogino-7.png",
+      "/Weblogino/weblogino-8.png",
+    ],
+  },
+  {
+    id: 4,
     name: "Digitize",
     shortDescription:
       "Digitize is a responsive e-commerce user interface built with TailwindCSS, featuring product listing, product detail, and shopping cart pages with a clean, modular, and modern design approach.",
@@ -284,7 +374,7 @@ const projects: (ProjectProps & { id: number })[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Shopino (E-Commerce UI)",
     shortDescription:
       "A lightweight, high-performance e-commerce UI kit built with HTML5, Tailwind CSS v4, and Alpine.js. Features a fully responsive design including a Product Listing page and a detailed Product Page, with dark mode support and smooth interactive elements.",
